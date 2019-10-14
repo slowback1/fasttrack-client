@@ -1,0 +1,16 @@
+.leftNav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    min-width: 20%;
+    justify-content: flex-start;
+    i, p {
+        margin-left: 1rem;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.25s;
+    }
+    i:hover, p:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,65 @@
+.loginArea {
+    width: 15vw;
+    background-color: $secondary;
+    color: $secondaryFont;
+    position: absolute;
+    right: 5vw;
+    top: 1vh;
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 0.25rem solid $secondaryFont;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+            input[type="text"], input[type="password"] {
+                border: none;
+                border-radius: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                margin-top: 5px;
+                background-color: $form;
+                color: $formFont;
+                transition: 0.5s;
+                max-width: 90%;
+            }
+            input[type="text"]:focus, input[type="password"]:focus, input[type="text"]:hover, input[type="password"]:hover {
+                background-color: $primary;
+            }
+            
+        }
+        input[type="submit"] {
+            border: 2px solid $primary;
+            border-radius: 12px;
+            background-color: $form;
+            color: $formFont;
+            transition: 0.5s;
+            max-width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: $primary;
+        }
+    }
+    .warningBox {
+        border: 2px solid $errorFont;
+        background-color: $error;
+        color: $errorFont;
+        padding: 10px;
+    }
+    .LRTabLink {
+        color: $linkFont;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        align-self: flex-end;
+        text-align:right;
+    }
+}

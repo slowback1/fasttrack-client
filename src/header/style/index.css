@@ -1,0 +1,146 @@
+/* this reset css should be at the very top of all css rules, will probably load it as its own seperate css file in a later build */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-color: #40e056;
+  color: #201201;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.loginArea {
+  width: 15vw;
+  background-color: #fcfcfc;
+  color: #202302;
+  position: absolute;
+  right: 5vw;
+  top: 1vh;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 0.25rem solid #202302;
+}
+.loginArea form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.loginArea form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+.loginArea form label input[type=text], .loginArea form label input[type=password] {
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  background-color: #47ff476e;
+  color: #021023;
+  transition: 0.5s;
+  max-width: 90%;
+}
+.loginArea form label input[type=text]:focus, .loginArea form label input[type=password]:focus, .loginArea form label input[type=text]:hover, .loginArea form label input[type=password]:hover {
+  background-color: #40e056;
+}
+.loginArea form input[type=submit] {
+  border: 2px solid #40e056;
+  border-radius: 12px;
+  background-color: #47ff476e;
+  color: #021023;
+  transition: 0.5s;
+  max-width: 100%;
+}
+.loginArea form input[type=submit]:hover {
+  background-color: #40e056;
+}
+.loginArea .warningBox {
+  border: 2px solid #ee5b5b;
+  background-color: #dbdbdb;
+  color: #ee5b5b;
+  padding: 10px;
+}
+.loginArea .LRTabLink {
+  color: #1c68c0;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.leftNav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-width: 20%;
+  justify-content: flex-start;
+}
+.leftNav i, .leftNav p {
+  margin-left: 1rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.25s;
+}
+.leftNav i:hover, .leftNav p:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=index.css.map */

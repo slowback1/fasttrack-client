@@ -1,0 +1,16 @@
+/* this reset css should be at the very top of all css rules, will probably load it as its own seperate css file in a later build */
+@import '../../generalStyle/reset';
+@import '../../generalStyle/colors';
+
+
+header{
+    background-color: $primary;
+    color: $primaryFont;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    padding: 2rem;
+    justify-content: space-between;
+}
+@import 'loginSection';
+@import 'navigation';
